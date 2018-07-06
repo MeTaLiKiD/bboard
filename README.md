@@ -6,3 +6,4 @@
 
 * [Bootstrap](https://getbootstrap.com)
 * [jQuery](https://jquery.com)
+* [Flat UI Palette](https://flatuicolors.com/palette/defo)
