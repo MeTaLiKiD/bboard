@@ -12,6 +12,8 @@
 
   <!-- BBOARD -->
   <link rel="stylesheet" href="css/bboard.css">
+  <link rel="stylesheet" href="css/bboard-mobile.css">
+  <link rel="stylesheet" href="css/bboard-desktop.css">
 
   <title>BBOARD - Boostrap 4 Admin Dashboard Template</title>
 
@@ -20,36 +22,34 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bb-bg-primary">
+  <nav class="navbar navbar-expand-md fixed-top navbar-light bb-bg-secondary">
 
     <!-- NAVBAR-BRAND -->
-    <a class="navbar-brand" href="#">BBOARD</a>
-
-    <!-- NAVBAR-TOGGLER -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContent" aria-controls="NavbarContent"
-      aria-expanded="false" aria-label="Toggle Navbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand bb-navbar-brand" href="#">BBOARD</a>
 
     <!-- NAVBAR-CONTENT -->
-    <div class="collapse navbar-collapse" id="NavbarContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="navbar-nav bb-navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+
+    <!-- NAVBAR-TOGGLER -->
+    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false"
+      aria-label="Toggle Navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
   </nav>
 
   <!-- SIDEBAR -->
-  <div class="bb-sidebar bb-bg-secondary">
+  <div class="bb-sidebar bb-bg-primary collapse" id="Sidebar">
 
     <!-- SIDEBAR-LOADER -->
     <div class="bb-sidebar-loader bb-bg-dark"></div>
@@ -57,13 +57,13 @@
     <!-- SIDEBAR-LINKS -->
     <div class="bb-sidebar-links">
       <a class="bb-sidebar-link active" href="#">
-        ACTIVE
+        a
       </a>
       <a class="bb-sidebar-link" href="#">
-        LINK
+        b
       </a>
       <a class="bb-sidebar-link" href="#">
-        LINK
+        c
       </a>
     </div>
 
@@ -71,7 +71,11 @@
 
   <!-- WRAPPER -->
   <div class="bb-wrapper">
+    <div class="container-fluid">
+      <div class="tall">
 
+      </div>
+    </div>
   </div>
 
   <!-- JQUERY -->
