@@ -15,7 +15,7 @@
 }
 
 .bb-wrapper {
-  background-color: yellow;
+  background-color: #FFFFFF;
   position: fixed;
   left: 56px;
   top: 56px;
@@ -24,9 +24,4 @@
   padding-top: 15px;
   padding-bottom: 15px;
   overflow: auto;
-}
-
-.tall {
-  background-color: red;
-  height: 1500px;
 }
