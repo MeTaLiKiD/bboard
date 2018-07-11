@@ -30,6 +30,7 @@
     color: rgba(255, 255, 255, .5);
     height: 56px;
     line-height: 56px;
+    font-size: 20px;
     display: block;
   }
   .bb-sidebar-link:hover {
