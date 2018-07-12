@@ -3,6 +3,7 @@ $(function () {
 
   // One var for each scrollbar
   var PsWrapperScrollbar;
+  var PsNotificationsScrollbar;
 
   // One object for each scrollbar
   AppWrapperScrollbar = {
@@ -15,8 +16,19 @@ $(function () {
     }
   };
 
+  AppNotificationsScrollbar = {
+    init: function () {
+      PsNotificationsScrollbar = new PerfectScrollbar('#NotificationsWrapper');
+    },
+
+    update: function () {
+      PsNotificationsScrollbar.update();
+    }
+  };
+
   // First init
   AppWrapperScrollbar.init();
+  AppNotificationsScrollbar.init();
 
 });
 
@@ -28,6 +40,7 @@ $(function () {
     clearTimeout(window.resizedFinished);
     window.resizedFinished = setTimeout(function () {
       AppWrapperScrollbar.update();
+      AppNotificationsScrollbar.update();
     }, 250);
   });
 

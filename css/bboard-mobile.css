@@ -10,6 +10,15 @@
         padding-right: .5rem;
         padding-left: .5rem;
     }
+    .bb-navbar-nav .dropdown-menu {
+        position: fixed;
+        top: 56px;
+        left: 5px;
+        right: 5px;
+    }
+    .bb-navbar-nav .dropdown-message {
+        max-width: 100%;
+    }
     /***********************************/
     /* SIDEBAR *************************/
     /***********************************/
@@ -43,7 +52,7 @@
         color: rgba(255, 255, 255, 1);
     }
     /***********************************/
-    /* WRAPER *************************/
+    /* WRAPER **************************/
     /***********************************/
     .bb-wrapper {
         left: 0;
