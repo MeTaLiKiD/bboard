@@ -7,3 +7,5 @@
 * [Bootstrap](https://getbootstrap.com)
 * [jQuery](https://jquery.com)
 * [Flat UI Palette](https://flatuicolors.com/palette/defo)
+* [Font Awesome](https://fontawesome.com/)
+* [Perfect Scrollbar](http://utatti.github.io/perfect-scrollbar/)
