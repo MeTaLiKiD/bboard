@@ -23,33 +23,46 @@
     /* SIDEBAR *************************/
     /***********************************/
     .bb-sidebar {
-        margin-top: 56px;
-        z-index: 1040;
-        position: relative;
+        top: 56px;
+        width: auto;
     }
     .bb-sidebar-loader {
         display: none;
     }
-    .bb-sidebar-links {
-        height: 56px;
-        text-align: center;
-    }
-    .bb-sidebar-link {
-        color: rgba(255, 255, 255, .5);
-        display: inline-block;
-        line-height: 56px;
-        width: 56px;
-        height: 56px;
-    }
-    .bb-sidebar-link:not(:first-child) {
-        margin-left: 0.5rem;
-    }
-    .bb-sidebar-link:hover {
-        color: rgba(255, 255, 255, .75);
-        text-decoration: none;
-    }
     .bb-sidebar-link.active {
-        color: rgba(255, 255, 255, 1);
+        box-shadow: inset 4px 0 0 #FFFFFF;
+    }
+    .bb-sidebar-links {
+        text-align: left;
+    }
+    .bb-sidebar-sublinks {
+        display: inline-block;
+        background-color: inherit;
+    }
+    .bb-sidebar-link>a {
+        vertical-align: top;
+        display: inline-block;
+        padding-left: .75rem;
+        color: #FFF;
+    }
+    .bb-sidebar-link>a:hover {
+        background-color: inherit;
+    }
+    .bb-sidebar-sublinks {
+        border: none;
+    }
+    .bb-sidebar-title {
+        font-weight: normal;
+    }
+    .bb-sidebar-sublinks a:hover {
+        background-color: inherit;
+    }
+    .bb-sidebar-sublink a.active {
+        background-color: inherit;
+        color: #FFF;
+    }
+    .bb-sidebar-sublinks a {
+        color: #FFF;
     }
     /***********************************/
     /* WRAPER **************************/

@@ -8,37 +8,13 @@
   /***********************************/
   /* SIDEBAR *************************/
   /***********************************/
-  .bb-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 56px;
-    z-index: 1040;
-  }
   .bb-sidebar.collapse {
     display: block;
   }
-  .bb-sidebar-loader {
-    height: 56px;
-  }
-  .bb-sidebar-links {
-    height: auto;
-    text-align: center;
-  }
-  .bb-sidebar-link {
-    color: rgba(255, 255, 255, .5);
-    height: 56px;
-    line-height: 56px;
+  .bb-sidebar-link:hover .bb-sidebar-sublinks {
     display: block;
-  }
-  .bb-sidebar-link:hover {
-    color: rgba(255, 255, 255, .75);
-    background-color: #1B2631;
-    text-decoration: none;
-  }
-  .bb-sidebar-link.active {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: inset 4px 0 0 #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 56px;
   }
 }

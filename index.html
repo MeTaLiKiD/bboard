@@ -30,6 +30,12 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md fixed-top navbar-light bb-bg-secondary">
 
+    <!-- NAVBAR-TOGGLER -->
+    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false"
+      aria-label="Toggle navbar" id="NavbarToggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <!-- NAVBAR-BRAND -->
     <a class="navbar-brand bb-navbar-brand" href="#">BBOARD</a>
 
@@ -126,13 +132,6 @@
       </li>
 
     </ul>
-
-    <!-- NAVBAR-TOGGLER -->
-    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false"
-      aria-label="Toggle navbar" id="NavbarToggler">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
   </nav>
 
   <!-- SIDEBAR -->
@@ -142,17 +141,71 @@
     <div class="bb-sidebar-loader bb-bg-dark" id="SidebarLoader"></div>
 
     <!-- SIDEBAR-LINKS -->
-    <div class="bb-sidebar-links">
-      <a class="bb-sidebar-link active" href="#">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-      </a>
-      <a class="bb-sidebar-link" href="#">
-        <i class="fas fa-fw fa-table"></i>
-      </a>
-      <a class="bb-sidebar-link" href="#">
-        <i class="fas fa-fw fa-sitemap"></i>
-      </a>
-    </div>
+    <ul class="bb-sidebar-links">
+      <li class="bb-sidebar-link active" href="#">
+        <a href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+        </a>
+        <ul class="bb-sidebar-sublinks bb-bg-secondary">
+          <li class="bb-sidebar-sublink bb-sidebar-title">
+            <a class="active" href="#">Dashboard</a>
+          </li>
+          <li class="bb-sidebar-divider"></li>
+          <li class="bb-sidebar-sublink">
+            <a href="#">Link 1</a>
+          </li>
+          <li class="bb-sidebar-sublink">
+            <a class="active" href="#">Link 2</a>
+          </li>
+          <li class="bb-sidebar-sublink">
+            <a href="#">Link 3</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="bb-sidebar-link" href="#">
+          <a href="#">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+          </a>
+          <ul class="bb-sidebar-sublinks bb-bg-secondary">
+            <li class="bb-sidebar-sublink bb-sidebar-title">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="bb-sidebar-divider"></li>
+            <li class="bb-sidebar-sublink">
+              <a href="#">Link 1</a>
+            </li>
+            <li class="bb-sidebar-sublink">
+              <a href="#">Link 2</a>
+            </li>
+            <li class="bb-sidebar-sublink">
+              <a href="#">Link 3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="bb-sidebar-link" href="#">
+            <a href="#">
+              <i class="fas fa-fw fa-tachometer-alt"></i>
+            </a>
+            <ul class="bb-sidebar-sublinks bb-bg-secondary">
+              <li class="bb-sidebar-sublink bb-sidebar-title">
+                <a href="#">Dashboard</a>
+              </li>
+              <li class="bb-sidebar-divider"></li>
+              <li class="bb-sidebar-sublink">
+                <a href="#">Link 1</a>
+              </li>
+              <li class="bb-sidebar-sublink">
+                <a href="#">Link 2</a>
+              </li>
+              <li class="bb-sidebar-sublink">
+                <a href="#">Link 3</a>
+              </li>
+            </ul>
+          </li>
+          
+    </ul>
 
   </div>
 
