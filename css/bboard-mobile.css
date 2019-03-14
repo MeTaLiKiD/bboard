@@ -1,69 +1,96 @@
 @media(max-width: 767.98px) {
+
     /***********************************/
     /* NAVBAR **************************/
     /***********************************/
+
     .bb-navbar-nav {
         -ms-flex-direction: row;
         flex-direction: row;
     }
+
     .bb-navbar-nav .nav-link {
         padding-right: .5rem;
         padding-left: .5rem;
     }
+
     .bb-navbar-nav .dropdown-menu {
         position: fixed;
-        top: 56px;
+        top: 58px;
         left: 5px;
         right: 5px;
     }
+
     .bb-navbar-nav .dropdown-message {
         max-width: 100%;
     }
+
     /***********************************/
     /* SIDEBAR *************************/
     /***********************************/
+
     .bb-sidebar {
-        top: 56px;
-        width: auto;
+        width: 100%;
     }
-    .bb-sidebar-loader {
-        display: none;
+
+    .bb-sidebar-link {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, .05);
     }
-    .bb-sidebar-link.active {
-        box-shadow: inset 4px 0 0 #FFFFFF;
+
+    .bb-sidebar-link-text {
+        display: inline-block;
     }
+
     .bb-sidebar-links {
         text-align: left;
     }
+
     .bb-sidebar-sublinks {
         display: inline-block;
         background-color: inherit;
+        width: 100%;
     }
+
+    .bb-sidebar-sublinks .dropdown-header {
+        color: #ccc;
+        text-decoration: underline;
+    }
+
     .bb-sidebar-link>a {
-        vertical-align: top;
-        display: inline-block;
-        padding-left: .75rem;
+        display: block;
         color: #FFF;
     }
+
+    .bb-sidebar-link-text {
+        font-size: 1rem;
+    }
+
     .bb-sidebar-link>a:hover {
         background-color: inherit;
     }
+
     .bb-sidebar-sublinks {
         border: none;
     }
+
     .bb-sidebar-title {
         font-weight: normal;
     }
+
     .bb-sidebar-sublinks a:hover {
         background-color: inherit;
     }
+
     .bb-sidebar-sublink a.active {
         background-color: inherit;
         color: #FFF;
     }
+
     .bb-sidebar-sublinks a {
         color: #FFF;
     }
+
     /***********************************/
     /* WRAPER **************************/
     /***********************************/

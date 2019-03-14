@@ -1,20 +1,16 @@
 @media (min-width: 768px) {
-  /***********************************/
-  /* NAVBAR **************************/
-  /***********************************/
-  .bb-navbar-brand {
-    margin-left: 56px;
-  }
+
   /***********************************/
   /* SIDEBAR *************************/
   /***********************************/
   .bb-sidebar.collapse {
     display: block;
   }
+
   .bb-sidebar-link:hover .bb-sidebar-sublinks {
     display: block;
     position: absolute;
     top: 0;
-    left: 56px;
+    left: 100px;
   }
 }

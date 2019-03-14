@@ -132,19 +132,25 @@ body {
 
 .bb-sidebar-link>a {
   color: rgba(255, 255, 255, .5);
-  height: 56px;
-  line-height: 56px;
   display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.bb-sidebar-link-text {
+  display: block;
+  font-size: 0.7rem;
 }
 
 .bb-sidebar-link>a:hover {
   color: rgba(255, 255, 255, .75);
-  background-color: rgba(0, 0, 0, .05);
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .bb-sidebar-link.active>a {
   color: rgba(255, 255, 255, 1);
   box-shadow: inset 4px 0 0 #FFFFFF;
+  background-color: rgba(0, 0, 0, .05);
 }
 
 .bb-sidebar-sublinks {
@@ -160,31 +166,28 @@ body {
   text-align: left;
 }
 
+.bb-sidebar-sublinks .dropdown-header {
+  padding-top: 1rem;
+}
+
 .bb-sidebar-sublinks a {
   color: inherit;
   display: block;
-  margin: 4px 2px;
-  margin-left: 0;
+  margin: 4px 6px;
   padding: 0 .75rem;
-  border-radius: 0 5px 5px 0;
-  height: 32px;
+  border-radius: 5px;
   line-height: 32px;
 }
 
 .bb-sidebar-sublinks a:hover {
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 105, 92, 0.05);
 }
 
 .bb-sidebar-sublink a.active {
   background-color: rgba(0, 0, 0, 0.05);
-  color: #34495E;
+  color: #00695c;
   font-weight: bold;
-}
-
-.bb-sidebar-title {
-  font-weight: bold;
-  color: #34495E;
 }
 
 .bb-sidebar-title a {
