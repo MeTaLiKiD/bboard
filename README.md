@@ -8,3 +8,5 @@
 * [jQuery](https://jquery.com)
 * [Font Awesome](https://fontawesome.com/)
 * [Perfect Scrollbar](http://utatti.github.io/perfect-scrollbar/)
+* [CSS Gradient](https://cssgradient.io/)
+* [materialuicolors](http://materialuicolors.co)

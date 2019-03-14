@@ -16,6 +16,8 @@
   <!-- FONT-AWESOME -->
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+
   <!-- BBOARD -->
   <link rel="stylesheet" href="css/bboard.css">
   <link rel="stylesheet" href="css/bboard-mobile.css">
@@ -28,26 +30,39 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md fixed-top navbar-light bb-bg-secondary">
+  <nav class="navbar navbar-expand-md fixed-top navbar-light bb-navbar shadow">
 
     <!-- NAVBAR-TOGGLER -->
-    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#Sidebar"
-      aria-controls="Sidebar" aria-expanded="false" aria-label="Toggle navbar" id="NavbarToggler">
+    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse"
+      data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false"
+      aria-label="Toggle navbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- NAVBAR-SEARCH -->
+    <form class="form-inline d-none d-md-block">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <button class="btn btn-bboard" type="button">
+            <i class="fas fa-fw fa-search"></i>
+          </button>
+        </div>
+        <input type="text" class="form-control" placeholder="Search...">
+      </div>
+    </form>
+
     <!-- NAVBAR-BRAND -->
-    <a class="navbar-brand bb-navbar-brand" href="#">BBOARD</a>
+    <a class="navbar-brand m-auto bb-navbar-brand" href="#">BBOARD</a>
 
     <!-- NAVBAR-CONTENT -->
-    <ul class="navbar-nav bb-navbar-nav ml-auto">
+    <ul class="navbar-nav bb-navbar-nav">
 
       <!-- NOTIFICATIONS -->
       <li class="nav-item dropdown" id="NotificationsButton">
 
         <!-- NOTIFICATIONS-BUTTON -->
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-          id="NotificationsMenu">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" id="NotificationsMenu">
           <i class="fas fa-fw fa-bell"></i>
           <span class="text-danger indicator">
             <i class="fas fa-fw fa-circle"></i>
@@ -58,9 +73,9 @@
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="NotificationsMenu">
 
           <!-- NOTIFICATIONS-MENU-TITLE -->
-          <h6 class="dropdown-header text-center">
-            Notifications
-            <span class="badge badge-pill badge-danger">5</span>
+          <h6 class="dropdown-header text-center pb-3">
+            <strong>Notifications</strong>
+            <span class="badge badge-pill badge-danger ml-1">5</span>
           </h6>
 
           <!-- NOTIFICATIONS-MENU-LIST -->
@@ -72,7 +87,8 @@
                 </strong>
               </span>
               <span class="small float-right text-muted">04:12 PM</span>
-              <div class="dropdown-message small">This is an automated server response message. All systems are online.
+              <div class="dropdown-message small">This is an automated server
+                response message. All systems are online.
               </div>
             </a>
             <a class="dropdown-item" href="#">
@@ -82,7 +98,8 @@
                 </strong>
               </span>
               <span class="small float-right text-muted">11:21 AM</span>
-              <div class="dropdown-message small">This is an automated server response message. All systems are offline.
+              <div class="dropdown-message small">This is an automated server
+                response message. All systems are offline.
               </div>
             </a>
             <a class="dropdown-item" href="#">
@@ -91,8 +108,9 @@
                   <i class="fas fa-fw fa-check-circle"></i> Status Update
                 </strong>
               </span>
-              <span class="small float-right text-muted">04:12 PM</span>
-              <div class="dropdown-message small">This is an automated server response message. All systems are online.
+              <span class="small float-right text-muted">4:12 PM</span>
+              <div class="dropdown-message small">This is an automated server
+                response message. All systems are online.
               </div>
             </a>
             <a class="dropdown-item" href="#">
@@ -101,8 +119,9 @@
                   <i class="fas fa-fw fa-check-circle"></i> Status Update
                 </strong>
               </span>
-              <span class="small float-right text-muted">04:12 PM</span>
-              <div class="dropdown-message small">This is an automated server response message. All systems are online.
+              <span class="small float-right text-muted">4:12 PM</span>
+              <div class="dropdown-message small">This is an automated server
+                response message. All systems are online.
               </div>
             </a>
             <a class="dropdown-item" href="#">
@@ -111,8 +130,9 @@
                   <i class="fas fa-fw fa-check-circle"></i> Status Update
                 </strong>
               </span>
-              <span class="small float-right text-muted">04:12 PM</span>
-              <div class="dropdown-message small">This is an automated server response message. All systems are online.
+              <span class="small float-right text-muted">4:12 PM</span>
+              <div class="dropdown-message small">This is an automated server
+                response message. All systems are online.
               </div>
             </a>
             <a class="dropdown-item" href="#">
@@ -122,7 +142,9 @@
                 </strong>
               </span>
               <span class="small float-right text-muted">11:21 AM</span>
-              <div class="dropdown-message small">This is an automated server response message. All systems are offline.
+              <div class="dropdown-message small">This is an automated server
+                response message. All systems are
+                offline.
               </div>
             </a>
 
@@ -130,7 +152,7 @@
 
           <!-- NOTIFICATIONS-MENU-ALL-BUTTON -->
           <a class="dropdown-item small" href="#">
-            View all notifications
+            <strong>View all notifications</strong>
             <i class="fas fa-fw fa-angle-right"></i>
           </a>
 
@@ -143,9 +165,6 @@
 
   <!-- SIDEBAR -->
   <div class="bb-sidebar bb-bg-primary collapse" id="Sidebar">
-
-    <!-- SIDEBAR-LOADER -->
-    <div class="bb-sidebar-loader bb-bg-dark" id="SidebarLoader"></div>
 
     <!-- SIDEBAR-LINKS -->
     <ul class="bb-sidebar-links">
@@ -218,9 +237,7 @@
 
   <!-- WRAPPER -->
   <div class="bb-wrapper" id="Wrapper">
-    <div class="container-fluid" style="height: 1800px;">
-
-    </div>
+    <div class="container-fluid" style="height: 1800px;"></div>
   </div>
   </div>
 

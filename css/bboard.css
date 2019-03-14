@@ -1,28 +1,35 @@
 /**** COMMON ****/
 
-.bb-bg-primary {
-  background-color: #34495E;
+body {
+  font-family: 'Nunito', sans-serif;
 }
 
-.bb-bg-secondary {
-  background-color: #ECF0F1;
+.btn-bboard {
+  color: #fff;
+  background-color: #00695c;
+  border-color: #00695c;
 }
 
-.bb-bg-dark {
-  background-color: #2C3E50;
+.btn-bboard:hover {
+  color: #fff;
 }
 
-.bb-bg-darker {
-  background-color: #1B2631;
+.btn-bboard:focus {
+  box-shadow: 0 0 0 0.1rem rgba(0, 105, 92, 0.25);
+}
+
+.form-control:focus {
+  border-color: #ced4da;
+  box-shadow: 0 0 0 0.1rem rgba(0, 105, 92, 0.25);
 }
 
 /**** WRAPPER ****/
 
 .bb-wrapper {
-  background-color: #FFFFFF;
+  background-color: #fcfcfc;
   position: fixed;
-  left: 56px;
-  top: 56px;
+  left: 100px;
+  top: 68px;
   right: 0;
   bottom: 0;
   padding-top: 15px;
@@ -31,6 +38,20 @@
 }
 
 /**** NAVBAR ****/
+
+.bb-navbar {
+  line-height: 36px;
+}
+
+.navbar-brand.bb-navbar-brand {
+  color: #00695c;
+  font-weight: bold;
+}
+
+.navbar-brand.bb-navbar-brand:hover {
+  color: #00695c;
+  font-weight: bold;
+}
 
 .bb-navbar-nav>.dropdown>.nav-link:after {
   float: right;
@@ -49,7 +70,7 @@
 
 .bb-navbar-nav>.dropdown>.nav-link .indicator {
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 22px;
   font-size: 10px;
 }
@@ -62,11 +83,12 @@
 }
 
 .bb-navbar-nav .dropdown-menu {
+  line-height: 1.5;
   padding-bottom: 0;
 }
 
 .bb-navbar-nav .dropdown-menu>.dropdown-item:last-child {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   text-align: center;
 }
 
@@ -90,16 +112,14 @@
 /*** SIDEBAR ***/
 
 .bb-sidebar {
+  background: rgb(0, 105, 92);
+  background: linear-gradient(160deg, rgba(0, 105, 92, 1) 0%, rgba(0, 105, 92, 0.9) 100%);
   position: fixed;
-  top: 0;
+  top: 68px;
   left: 0;
   bottom: 0;
-  width: 56px;
+  width: 100px;
   z-index: 1040;
-}
-
-.bb-sidebar-loader {
-  height: 56px;
 }
 
 .bb-sidebar-links {
