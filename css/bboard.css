@@ -61,7 +61,7 @@
   font-weight: bold;
 }
 
-.bb-navbar-nav>.dropdown>.nav-link:after {
+.bb-dropdown.bb-scroll-dropdown>.nav-link:after {
   float: right;
   border: none;
   margin-left: 10px;
@@ -72,49 +72,66 @@
   font-family: 'Font Awesome 5 Free';
 }
 
-.bb-navbar-nav>.dropdown.show>.nav-link:after {
+.bb-dropdown.bb-scroll-dropdown.show>.nav-link:after {
   content: '\f107';
 }
 
-.bb-navbar-nav>.dropdown>.nav-link .indicator {
+.bb-scroll-dropdown>.nav-link .indicator {
   position: absolute;
   top: 0;
   left: 22px;
   font-size: 10px;
 }
 
-.bb-navbar-nav .dropdown-item {
+.bb-scroll-dropdown .dropdown-item {
   border-top: 1px solid #e9ecef;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-right: 2rem;
 }
 
-.bb-navbar-nav .dropdown-menu {
+.bb-scroll-dropdown .dropdown-menu {
   line-height: 1.5;
   padding-bottom: 0;
 }
 
-.bb-navbar-nav .dropdown-menu>.dropdown-item:last-child {
+.bb-scroll-dropdown .dropdown-menu>.dropdown-item:last-child {
   background-color: #fafafa;
   text-align: center;
 }
 
-.bb-navbar-nav .dropdown-item:active {
-  color: inherit;
-  background-color: inherit;
-}
-
-.bb-navbar-nav .dropdown-message {
+.bb-scroll-dropdown .dropdown-message {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 300px;
 }
 
-.bb-navbar-nav .dropdown-wrapper {
+.bb-scroll-dropdown .dropdown-wrapper {
   max-height: 180px;
   overflow: hidden;
   position: relative;
+}
+
+.bb-dropdown .dropdown-item:active {
+  color: inherit;
+  background-color: rgba(0, 105, 92, 0.05);
+}
+
+.bb-dropdown .dropdown-item:hover {
+  background-color: rgba(0, 105, 92, 0.05);
+}
+
+.bb-dropdown .nav-link:after {
+  content: none;
+}
+
+.bb-user-dropdown {
+  border-radius: 50%;
+}
+
+.bb-user-dropdown img {
+  height: 34px;
+  border-radius: 50%;
 }
 
 /***********

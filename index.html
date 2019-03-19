@@ -34,8 +34,8 @@
   <nav class="navbar navbar-expand-md fixed-top navbar-light bb-navbar shadow">
 
     <!-- NAVBAR-TOGGLER -->
-    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false" aria-label="Toggle navbar">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler collapsed mr-3" type="button" data-toggle="collapse" data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false" aria-label="Toggle navbar">
+      <span class="bb-toggler-icon fas fa-fw"></span>
     </button>
 
     <!-- NAVBAR-SEARCH-BAR -->
@@ -57,7 +57,7 @@
     <ul class="navbar-nav bb-navbar-nav">
 
       <!-- NOTIFICATIONS -->
-      <li class="nav-item dropdown" id="NotificationsButton">
+      <li class="nav-item dropdown bb-dropdown bb-scroll-dropdown" id="NotificationsButton">
 
         <!-- NOTIFICATIONS-BUTTON -->
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="NotificationsMenu">
@@ -158,6 +158,33 @@
 
       </li>
 
+      <!-- USER -->
+      <li class="nav-item dropdown bb-dropdown" id="NotificationsButton">
+
+        <!-- USER-BUTTON -->
+        <a href="#" class="nav-link dropdown-toggle bb-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="UserMenu">
+          <img src="images/metalikid.png">
+        </a>
+
+        <!-- USER-MENU -->
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="UserMenu">
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-fw fa-user"></i> Profile
+          </a>
+
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-fw fa-cogs"></i> Settings
+          </a>
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item text-danger" href="#">
+            <i class="fas fa-fw fa-power-off"></i> Logout
+          </a>
+
+        </div>
+      </li>
+
     </ul>
   </nav>
 
@@ -252,7 +279,6 @@
   <!-- WRAPPER -->
   <div class="bb-wrapper" id="Wrapper">
     <div class="container-fluid" style="height: 1800px;"></div>
-  </div>
   </div>
 
   <!-- JQUERY -->

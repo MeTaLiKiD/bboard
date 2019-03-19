@@ -14,15 +14,31 @@
     padding-left: .5rem;
   }
 
-  .bb-navbar-nav .dropdown-menu {
-    position: fixed;
+  .bb-scroll-dropdown .dropdown-menu {
+    position: fixed !important;
     top: 58px;
     left: 5px;
     right: 5px;
   }
 
+  .bb-dropdown .dropdown-menu {
+    position: absolute;
+  }
+
   .bb-navbar-nav .dropdown-message {
     max-width: 100%;
+  }
+
+  .bb-navbar .navbar-toggler {
+    padding: .5rem 0.5rem;
+  }
+
+  .bb-navbar .navbar-toggler.collapsed .bb-toggler-icon:before {
+    content: "\f0c9";
+  }
+
+  .bb-navbar .navbar-toggler .bb-toggler-icon:before {
+    content: "\f00d";
   }
 
   /***********
