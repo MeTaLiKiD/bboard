@@ -1,29 +1,35 @@
-/**** COMMON ****/
+/**********
+ * COMMON *
+ **********/
 
-body {
+.bb-body {
   font-family: 'Nunito', sans-serif;
 }
 
-.btn-bboard {
+.bb-btn {
   color: #fff;
   background-color: #00695c;
   border-color: #00695c;
 }
 
-.btn-bboard:hover {
+.bb-btn:hover {
   color: #fff;
+  background-color: #00584d;
+  border-color: #005248;
 }
 
-.btn-bboard:focus {
+.bb-btn:focus {
   box-shadow: 0 0 0 0.1rem rgba(0, 105, 92, 0.25);
 }
 
-.form-control:focus {
+.bb-form-control:focus {
   border-color: #ced4da;
   box-shadow: 0 0 0 0.1rem rgba(0, 105, 92, 0.25);
 }
 
-/**** WRAPPER ****/
+/***********
+ * WRAPPER *
+ ***********/
 
 .bb-wrapper {
   background-color: #fcfcfc;
@@ -37,7 +43,9 @@ body {
   overflow: auto;
 }
 
-/**** NAVBAR ****/
+/**********
+ * NAVBAR *
+ **********/
 
 .bb-navbar {
   line-height: 36px;
@@ -109,7 +117,9 @@ body {
   position: relative;
 }
 
-/*** SIDEBAR ***/
+/***********
+ * SIDEBAR *
+ ***********/
 
 .bb-sidebar {
   background: rgb(0, 105, 92);
@@ -119,7 +129,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100px;
-  z-index: 1040;
+  z-index: 1000;
 }
 
 .bb-sidebar-links {
@@ -127,6 +137,10 @@ body {
   text-align: center;
   padding: 0;
   list-style: none;
+  position: relative;
+}
+
+.bb-sidebar-link {
   position: relative;
 }
 
@@ -162,12 +176,14 @@ body {
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: 0 .25rem .25rem 0;
   border-left: none;
+  width: max-content;
   min-width: 150px;
   text-align: left;
 }
 
 .bb-sidebar-sublinks .dropdown-header {
   padding-top: 1rem;
+  text-align: center;
 }
 
 .bb-sidebar-sublinks a {
@@ -188,15 +204,4 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
   color: #00695c;
   font-weight: bold;
-}
-
-.bb-sidebar-title a {
-  height: 46px;
-  line-height: 46px;
-}
-
-.bb-sidebar-divider {
-  height: 0;
-  overflow: hidden;
-  border-top: 1px solid #E9ECEF;
 }

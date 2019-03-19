@@ -1,8 +1,9 @@
 @media (min-width: 768px) {
 
-  /***********************************/
-  /* SIDEBAR *************************/
-  /***********************************/
+  /***********
+   * SIDEBAR *
+   ***********/
+
   .bb-sidebar.collapse {
     display: block;
   }
@@ -10,7 +11,8 @@
   .bb-sidebar-link:hover .bb-sidebar-sublinks {
     display: block;
     position: absolute;
-    top: 0;
     left: 100px;
+    top: 0;
   }
+
 }

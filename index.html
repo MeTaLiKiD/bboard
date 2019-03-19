@@ -3,7 +3,7 @@
 
 <head>
 
-  <!-- REQUIRED META TAGS -->
+  <!-- REQUIRED-META-TAGS -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,6 +16,7 @@
   <!-- FONT-AWESOME -->
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 
+  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
 
   <!-- BBOARD -->
@@ -27,32 +28,30 @@
 
 </head>
 
-<body>
+<body class="bb-body">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md fixed-top navbar-light bb-navbar shadow">
 
     <!-- NAVBAR-TOGGLER -->
-    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse"
-      data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false"
-      aria-label="Toggle navbar">
+    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false" aria-label="Toggle navbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- NAVBAR-SEARCH -->
+    <!-- NAVBAR-SEARCH-BAR -->
     <form class="form-inline d-none d-md-block">
       <div class="input-group">
         <div class="input-group-prepend">
-          <button class="btn btn-bboard" type="button">
+          <button class="btn bb-btn" type="button">
             <i class="fas fa-fw fa-search"></i>
           </button>
         </div>
-        <input type="text" class="form-control" placeholder="Search...">
+        <input type="text" class="form-control bb-form-control" placeholder="Search...">
       </div>
     </form>
 
     <!-- NAVBAR-BRAND -->
-    <a class="navbar-brand m-auto bb-navbar-brand" href="#">BBOARD</a>
+    <a class="navbar-brand bb-navbar-brand m-auto" href="#">BBOARD</a>
 
     <!-- NAVBAR-CONTENT -->
     <ul class="navbar-nav bb-navbar-nav">
@@ -61,8 +60,7 @@
       <li class="nav-item dropdown" id="NotificationsButton">
 
         <!-- NOTIFICATIONS-BUTTON -->
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false" id="NotificationsMenu">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="NotificationsMenu">
           <i class="fas fa-fw fa-bell"></i>
           <span class="text-danger indicator">
             <i class="fas fa-fw fa-circle"></i>
@@ -168,23 +166,82 @@
 
     <!-- SIDEBAR-LINKS -->
     <ul class="bb-sidebar-links">
+
+      <!-- SIDEBAR-DASHBOARD -->
       <li class="bb-sidebar-link active" href="#">
         <a href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span class="bb-sidebar-link-text">Dashboard</span>
         </a>
+      </li>
+
+      <!-- SIDEBAR-PAGES -->
+      <li class="bb-sidebar-link" href="#">
+        <a href="#">
+          <i class="fas fa-fw fa-folder"></i>
+          <span class="bb-sidebar-link-text">Pages</span>
+        </a>
         <ul class="bb-sidebar-sublinks">
-          <h6 class="dropdown-header">Sub menu</h6>
+          <h6 class="dropdown-header">Users</h6>
           <li class="bb-sidebar-sublink">
-            <a href="#">Link 1</a>
+            <a href="#">Login</a>
           </li>
           <li class="bb-sidebar-sublink">
-            <a class="active" href="#">Link 2</a>
+            <a href="#">Register</a>
           </li>
           <li class="bb-sidebar-sublink">
-            <a href="#">Link 3</a>
+            <a href="#">Forgot password</a>
           </li>
-          
+          <h6 class="dropdown-header">Others</h6>
+          <li class="bb-sidebar-sublink">
+            <a href="#">404 page</a>
+          </li>
+          <li class="bb-sidebar-sublink">
+            <a href="#">500 page</a>
+          </li>
+          <li class="bb-sidebar-sublink">
+            <a href="#">Blank page</a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- SIDEBAR-PLUGINS -->
+      <li class="bb-sidebar-link" href="#">
+        <a href="#">
+          <i class="fas fa-fw fa-toolbox"></i>
+          <span class="bb-sidebar-link-text">Tools</span>
+        </a>
+        <ul class="bb-sidebar-sublinks">
+          <li class="bb-sidebar-sublink">
+            <a href="#">Tool 1</a>
+          </li>
+          <li class="bb-sidebar-sublink">
+            <a href="#">Tool 2</a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- SIDEBAR-CHARTS -->
+      <li class="bb-sidebar-link" href="#">
+        <a href="#">
+          <i class="fas fa-fw fa-chart-line"></i>
+          <span class="bb-sidebar-link-text">Charts</span>
+        </a>
+      </li>
+
+      <!-- SIDEBAR-FORMS -->
+      <li class="bb-sidebar-link" href="#">
+        <a href="#">
+          <i class="fas fa-fw fa-list-alt"></i>
+          <span class="bb-sidebar-link-text">Forms</span>
+        </a>
+        <ul class="bb-sidebar-sublinks">
+          <li class="bb-sidebar-sublink">
+            <a href="#">Examples</a>
+          </li>
+          <li class="bb-sidebar-sublink">
+            <a href="#">Validation</a>
+          </li>
         </ul>
       </li>
 
