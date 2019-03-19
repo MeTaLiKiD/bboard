@@ -162,7 +162,7 @@
   </nav>
 
   <!-- SIDEBAR -->
-  <div class="bb-sidebar collapse" id="Sidebar">
+  <div class="bb-sidebar collapse accordion" id="Sidebar">
 
     <!-- SIDEBAR-LINKS -->
     <ul class="bb-sidebar-links">
@@ -177,11 +177,11 @@
 
       <!-- SIDEBAR-PAGES -->
       <li class="bb-sidebar-link" href="#">
-        <a href="#">
+        <a href="#" class="collapsed" data-toggle="collapse" data-target="#Pages">
           <i class="fas fa-fw fa-folder"></i>
           <span class="bb-sidebar-link-text">Pages</span>
         </a>
-        <ul class="bb-sidebar-sublinks">
+        <ul class="bb-sidebar-sublinks collapse" id="Pages" data-parent="#Sidebar">
           <h6 class="dropdown-header">Users</h6>
           <li class="bb-sidebar-sublink">
             <a href="#">Login</a>
@@ -207,11 +207,11 @@
 
       <!-- SIDEBAR-PLUGINS -->
       <li class="bb-sidebar-link" href="#">
-        <a href="#">
+        <a href="#" class="collapsed" data-toggle="collapse" data-target="#Tools">
           <i class="fas fa-fw fa-toolbox"></i>
           <span class="bb-sidebar-link-text">Tools</span>
         </a>
-        <ul class="bb-sidebar-sublinks">
+        <ul class="bb-sidebar-sublinks collapse" id="Tools" data-parent="#Sidebar">
           <li class="bb-sidebar-sublink">
             <a href="#">Tool 1</a>
           </li>
@@ -231,11 +231,11 @@
 
       <!-- SIDEBAR-FORMS -->
       <li class="bb-sidebar-link" href="#">
-        <a href="#">
+        <a href="#" class="collapsed" data-toggle="collapse" data-target="#Forms">
           <i class="fas fa-fw fa-list-alt"></i>
           <span class="bb-sidebar-link-text">Forms</span>
         </a>
-        <ul class="bb-sidebar-sublinks">
+        <ul class="bb-sidebar-sublinks collapse" id="Forms" data-parent="#Sidebar">
           <li class="bb-sidebar-sublink">
             <a href="#">Examples</a>
           </li>
