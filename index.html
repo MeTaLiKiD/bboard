@@ -63,7 +63,7 @@
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="NotificationsMenu">
           <i class="fas fa-fw fa-bell"></i>
           <span class="text-danger indicator">
-            <i class="fas fa-fw fa-circle"></i>
+            <i id="NotificationsIndicator" class="fas fa-fw fa-circle"></i>
           </span>
         </a>
 
@@ -73,79 +73,24 @@
           <!-- NOTIFICATIONS-MENU-TITLE -->
           <h6 class="dropdown-header text-center">
             <strong>Notifications</strong>
-            <span class="badge badge-pill badge-danger ml-1">5</span>
+            <span id="NotificationsUnreadCounter" class="badge badge-pill badge-danger ml-1 hidden"></span>
           </h6>
 
-          <!-- NOTIFICATIONS-MENU-LIST -->
+          <!-- NOTIFICATIONS-LIST -->
           <div class="dropdown-wrapper" id="NotificationsWrapper">
-            <a class="dropdown-item" href="#">
-              <span class="text-success">
-                <strong>
-                  <i class="fas fa-fw fa-check-circle"></i> Status Update
-                </strong>
-              </span>
-              <span class="small float-right text-muted">04:12 PM</span>
-              <div class="dropdown-message small">This is an automated server
-                response message. All systems are online.
-              </div>
-            </a>
-            <a class="dropdown-item" href="#">
-              <span class="text-danger">
-                <strong>
-                  <i class="fas fa-fw fa-exclamation-circle"></i> Status Update
-                </strong>
-              </span>
-              <span class="small float-right text-muted">11:21 AM</span>
-              <div class="dropdown-message small">This is an automated server
-                response message. All systems are offline.
-              </div>
-            </a>
-            <a class="dropdown-item" href="#">
-              <span class="text-success">
-                <strong>
-                  <i class="fas fa-fw fa-check-circle"></i> Status Update
-                </strong>
-              </span>
-              <span class="small float-right text-muted">4:12 PM</span>
-              <div class="dropdown-message small">This is an automated server
-                response message. All systems are online.
-              </div>
-            </a>
-            <a class="dropdown-item" href="#">
-              <span class="text-success">
-                <strong>
-                  <i class="fas fa-fw fa-check-circle"></i> Status Update
-                </strong>
-              </span>
-              <span class="small float-right text-muted">4:12 PM</span>
-              <div class="dropdown-message small">This is an automated server
-                response message. All systems are online.
-              </div>
-            </a>
-            <a class="dropdown-item" href="#">
-              <span class="text-success">
-                <strong>
-                  <i class="fas fa-fw fa-check-circle"></i> Status Update
-                </strong>
-              </span>
-              <span class="small float-right text-muted">4:12 PM</span>
-              <div class="dropdown-message small">This is an automated server
-                response message. All systems are online.
-              </div>
-            </a>
-            <a class="dropdown-item" href="#">
-              <span class="text-danger">
-                <strong>
-                  <i class="fas fa-fw fa-exclamation-circle"></i> Status Update
-                </strong>
-              </span>
-              <span class="small float-right text-muted">11:21 AM</span>
-              <div class="dropdown-message small">This is an automated server
-                response message. All systems are
-                offline.
-              </div>
-            </a>
 
+            <!-- NOTIFICATIONS-LOADER -->
+            <div id="NotificationsLoader" class="bb-dropdown-loader">
+              <i class="fas fa-2x fa-fw fa-spinner fa-spin"></i>
+            </div>
+
+            <!-- NOTIFICATIONS-EMPTY -->
+            <div id="NotificationsEmpty" class="bb-dropdown-loader hidden">
+              <i>No notification</i>
+            </div>
+
+            <!-- NOTIFICATIONS-CONTAINER -->
+            <div id="NotificationsContainer" class="hidden"></div>
           </div>
 
           <!-- NOTIFICATIONS-MENU-ALL-BUTTON -->
@@ -309,6 +254,19 @@
 
   </div>
 
+  <!-- NOTIFICATION-TEMPLATE -->
+  <script id="NotificationTemplate" type="text/html">
+    <a class="dropdown-item {{unread}} notification-link" href="#">
+      <span class="text-{{status}}">
+        <strong>
+          <i class="fas fa-fw {{icon}}"></i> {{title}}
+        </strong>
+      </span>
+      <span class="small float-right text-muted" data-toggle="tooltip" data-placement="left" title="{{date}}">{{time}}</span>
+      <div class="dropdown-message small">{{message}}</div>
+    </a>
+  </script>
+
   <!-- JQUERY -->
   <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -320,6 +278,7 @@
 
   <!-- BBOARD -->
   <script src="js/bboard.js"></script>
+  <script src="js/bboard-notifications.js"></script>
 
 </body>
 

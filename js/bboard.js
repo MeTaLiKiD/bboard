@@ -51,3 +51,8 @@ $(function () {
     AppNotificationsScrollbar.update();
   })
 });
+
+// Tooltip initialization
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
