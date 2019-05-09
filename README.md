@@ -12,5 +12,6 @@ Demo is [here](https://metalikid.github.io/bboard/).
 * [jQuery](https://jquery.com)
 * [Font Awesome](https://fontawesome.com/)
 * [Perfect Scrollbar](http://utatti.github.io/perfect-scrollbar/)
+* [Toast](https://github.com/Script47/Toast)
 * [CSS Gradient](https://cssgradient.io/)
 * [materialuicolors](http://materialuicolors.co)

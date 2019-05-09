@@ -72,3 +72,19 @@ $(function () {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+// Toasts
+$(function () {
+
+  ShowToast = function (title, type) {
+    $.toast({
+      title: title,
+      subtitle: '06:30 AM',
+      content: 'Hello, world! This is a toast message.',
+      type: type,
+      delay: 5000,
+      pause_on_hover: true
+    });
+  };
+
+});

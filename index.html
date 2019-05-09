@@ -17,7 +17,10 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 
   <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
+
+  <!-- TOAST -->
+  <link rel="stylesheet" href="vendor/toast/css/toast.min.css">
 
   <!-- BBOARD -->
   <link rel="stylesheet" href="css/bboard.css">
@@ -177,7 +180,7 @@
   </nav>
 
   <!-- SIDEBAR -->
-  <div id="Sidebar" class="bb-sidebar collapse accordion">
+  <div id="Sidebar" class="bb-sidebar collapse accordion shadow">
 
     <!-- SIDEBAR-LINKS -->
     <ul class="bb-sidebar-links">
@@ -287,6 +290,27 @@
       <!-- PAGE-CONTENT -->
       <div class="row">
 
+        <!-- TOASTS -->
+        <div class="col-md-4">
+          <div class="card mb-3 shadow">
+            <div class="card-header">Toasts</div>
+            <div class="card-body">
+              <button onclick="ShowToast('Info', 'info')" type="button" class="btn btn-info">
+                Info
+              </button>
+              <button onclick="ShowToast('Success', 'success')" type="button" class="btn btn-success">
+                Success
+              </button>
+              <button onclick="ShowToast('Warning', 'warning')" type="button" class="btn btn-warning">
+                Warning
+              </button>
+              <button onclick="ShowToast('Error', 'error')" type="button" class="btn btn-danger">
+                Error
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -360,6 +384,12 @@
 
   <!-- PERFECT-SCROLLBAR -->
   <script src="vendor/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+
+  <!-- BOOTSTRAP -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- TOAST -->
+  <script src="vendor/toast/js/toast.min.js"></script>
 
   <!-- BBOARD -->
   <script src="js/bboard.js"></script>

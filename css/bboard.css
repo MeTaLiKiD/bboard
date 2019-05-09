@@ -331,3 +331,12 @@ a:focus {
   padding-bottom: .5rem;
   margin-bottom: 1.5rem;
 }
+
+/**********
+ * TOASTS *
+ **********/
+
+#toast-wrapper {
+  top: 77px;
+  right: 10px;
+}
