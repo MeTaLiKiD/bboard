@@ -84,7 +84,7 @@
 .bb-dropdown>.nav-link .indicator {
   position: absolute;
   top: 0;
-  left: 22px;
+  left: 26px;
   font-size: 10px;
 }
 
@@ -147,6 +147,23 @@
 .dropdown-item.unread .small {
   font-weight: bold;
 }
+
+.notification-message-image {
+  width: 42px;
+}
+
+.notification-message-text {
+  font-weight: normal;
+}
+
+.dropdown-item.unread .notification-message-text {
+  font-weight: bold;
+}
+
+.dropdown-item.unread .notification-message-name {
+  font-weight: bold;
+}
+
 
 /***********
  * WRAPPER *

@@ -56,6 +56,53 @@
     <!-- NAVBAR-CONTENT -->
     <ul class="navbar-nav bb-navbar-nav">
 
+      <!-- MESSAGES -->
+      <li class="nav-item dropdown bb-dropdown bb-scroll-dropdown" id="MessagesButton">
+
+        <!-- MESSAGES-BUTTON -->
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="MessagesMenu">
+          <i class="fas fa-fw fa-envelope"></i>
+          <span class="text-danger indicator">
+            <i id="MessagesIndicator" class="fas fa-fw fa-circle"></i>
+          </span>
+        </a>
+
+        <!-- MESSAGES-MENU -->
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="MessagesMenu">
+
+          <!-- MESSAGES-MENU-TITLE -->
+          <h6 class="dropdown-header text-center">
+            <strong>Messages</strong>
+            <span id="MessagesUnreadCounter" class="badge badge-pill badge-danger ml-1 hidden"></span>
+          </h6>
+
+          <!-- MESSAGES-LIST -->
+          <div class="dropdown-wrapper" id="MessagesWrapper">
+
+            <!-- MESSAGES-LOADER -->
+            <div id="MessagesLoader" class="bb-dropdown-loader">
+              <i class="fas fa-2x fa-fw fa-spinner fa-spin"></i>
+            </div>
+
+            <!-- MESSAGES-EMPTY -->
+            <div id="MessagesEmpty" class="bb-dropdown-loader hidden">
+              <i>No notification</i>
+            </div>
+
+            <!-- MESSAGES-CONTAINER -->
+            <div id="MessagesContainer" class="hidden"></div>
+          </div>
+
+          <!-- MESSAGES-MENU-ALL-BUTTON -->
+          <a class="dropdown-item small" href="#">
+            <strong>View all messages</strong>
+            <i class="fas fa-fw fa-angle-right"></i>
+          </a>
+
+        </div>
+
+      </li>
+
       <!-- NOTIFICATIONS -->
       <li class="nav-item dropdown bb-dropdown bb-scroll-dropdown" id="NotificationsButton">
 
@@ -270,6 +317,18 @@
       </a>
     </script>
 
+    <!-- MESSAGE-TEMPLATE -->
+    <script id="MessageTemplate" type="text/html">
+      <a class="dropdown-item {{unread}} message-link" href="#">
+        <img src="{{image}}" class="float-left rounded-circle notification-message-image">
+        <div class="pl-3 dropdown-message small">
+          <span class="small float-right text-muted" data-toggle="tooltip" data-placement="left" title="{{date}}">{{time}}</span>
+          <span class="notification-message-name">{{name}}</span> <br>
+          <span class="notification-message-text">{{message}}</span>
+        </div>
+      </a>
+    </script>
+
   </div>
 
   <!-- JQUERY -->
@@ -284,6 +343,7 @@
   <!-- BBOARD -->
   <script src="js/bboard.js"></script>
   <script src="js/bboard-notifications.js"></script>
+  <script src="js/bboard-messages.js"></script>
 
 </body>
 
