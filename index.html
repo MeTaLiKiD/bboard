@@ -31,7 +31,7 @@
 <body class="bb-body">
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md fixed-top navbar-light bb-navbar shadow">
+  <nav id="Navbar" class="navbar navbar-expand-md fixed-top navbar-light bb-navbar shadow">
 
     <!-- NAVBAR-TOGGLER -->
     <button class="navbar-toggler collapsed mr-3" type="button" data-toggle="collapse" data-target="#Sidebar" aria-controls="Sidebar" aria-expanded="false" aria-label="Toggle navbar">
@@ -130,7 +130,7 @@
   </nav>
 
   <!-- SIDEBAR -->
-  <div class="bb-sidebar collapse accordion" id="Sidebar">
+  <div id="Sidebar" class="bb-sidebar collapse accordion">
 
     <!-- SIDEBAR-LINKS -->
     <ul class="bb-sidebar-links">
@@ -220,12 +220,12 @@
   </div>
 
   <!-- WRAPPER -->
-  <div class="bb-wrapper" id="Wrapper">
+  <div id="Wrapper" class="bb-wrapper">
     <div class="container-fluid" style="height: 1800px;"></div>
   </div>
 
   <!-- MODALS -->
-  <div>
+  <div id="Modals">
 
     <!-- LOGOUT-MODAL -->
     <div class="modal fade" id="LogoutModal" tabindex="-1" role="dialog" aria-labelledby="LogoutModal" aria-hidden="true">
@@ -254,18 +254,23 @@
 
   </div>
 
-  <!-- NOTIFICATION-TEMPLATE -->
-  <script id="NotificationTemplate" type="text/html">
-    <a class="dropdown-item {{unread}} notification-link" href="#">
-      <span class="text-{{status}}">
-        <strong>
-          <i class="fas fa-fw {{icon}}"></i> {{title}}
-        </strong>
-      </span>
-      <span class="small float-right text-muted" data-toggle="tooltip" data-placement="left" title="{{date}}">{{time}}</span>
-      <div class="dropdown-message small">{{message}}</div>
-    </a>
-  </script>
+  <!-- TEMPLATES -->
+  <div id="Templates">
+
+    <!-- NOTIFICATION-TEMPLATE -->
+    <script id="NotificationTemplate" type="text/html">
+      <a class="dropdown-item {{unread}} notification-link" href="#">
+        <span class="text-{{status}}">
+          <strong>
+            <i class="fas fa-fw {{icon}}"></i> {{title}}
+          </strong>
+        </span>
+        <span class="small float-right text-muted" data-toggle="tooltip" data-placement="left" title="{{date}}">{{time}}</span>
+        <div class="dropdown-message small">{{message}}</div>
+      </a>
+    </script>
+
+  </div>
 
   <!-- JQUERY -->
   <script src="vendor/jquery/jquery.min.js"></script>

@@ -1,5 +1,13 @@
 @media(max-width: 767.98px) {
 
+  /***********
+   * WRAPPER *
+   ***********/
+
+  .bb-wrapper {
+    left: 0;
+  }
+
   /**********
    * NAVBAR *
    **********/
@@ -23,6 +31,10 @@
 
   .bb-dropdown .dropdown-menu {
     position: absolute;
+  }
+
+  .bb-dropdown.bb-scroll-dropdown .dropdown-wrapper {
+    width: 100%;
   }
 
   .bb-navbar-nav .dropdown-message {
@@ -56,34 +68,39 @@
     font-size: 1rem;
   }
 
+  /* First level */
+
   .bb-sidebar-link>a {
     display: block;
-    color: #FFF;
+    color: #FFFFFF;
   }
 
-  .bb-sidebar-link>a:hover {
-    background-color: inherit;
-    color: #fff;
-  }
-
-  .bb-sidebar-link.active>a:hover {
+  .bb-sidebar-link.active a:hover {
     background-color: rgba(0, 0, 0, .05);
+  }
+
+  .bb-sidebar-link:hover>a {
+    color: #FFFFFF;
+    background-color: inherit;
   }
 
   .bb-sidebar-links {
     text-align: left;
   }
 
+  /* Second level */
+
   .bb-sidebar-sublinks {
     display: inline-block;
     background-color: inherit;
+    box-shadow: none;
     margin-left: 1.5rem;
     border: none;
-    border-left: 2px solid #fff;
+    border-left: 2px solid #FFFFFF;
   }
 
   .bb-sidebar-sublinks .dropdown-header {
-    color: #ccc;
+    color: #CCCCCC;
     text-decoration: underline;
     text-align: left;
     padding-left: 2rem;
@@ -93,14 +110,23 @@
     background-color: inherit;
   }
 
+  .bb-sidebar-sublink.active a {
+    color: #FFFFFF;
+  }
+
+  .bb-sidebar-sublink.active a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
   .bb-sidebar-sublinks a {
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 0.875rem;
+    margin-left: 1.25rem;
   }
 
   .bb-sidebar-sublink a.active {
     background-color: inherit;
-    color: #FFF;
+    color: #FFFFFF;
   }
 
   .bb-sidebar-link>a.collapsed>.bb-sidebar-link-text:after {
@@ -113,13 +139,4 @@
     content: '\f105';
     font-family: 'Font Awesome 5 Free';
   }
-
-  /***********
-   * WRAPPER *
-   ***********/
-
-  .bb-wrapper {
-    left: 0;
-  }
-
 }
