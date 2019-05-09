@@ -7,28 +7,37 @@
 }
 
 .bb-btn {
-  color: #fff;
-  background-color: #00695c;
-  border-color: #00695c;
+  color: #FFFFFF;
+  background-color: #00695C;
+  border-color: #00695C;
 }
 
 .bb-btn:hover {
-  color: #fff;
-  background-color: #00584d;
+  color: #FFFFFF;
+  background-color: #00584D;
   border-color: #005248;
 }
 
 .bb-btn:focus {
-  box-shadow: 0 0 0 0.1rem rgba(0, 105, 92, 0.25);
+  box-shadow: 0 0 0 .1rem rgba(0, 105, 92, 0.25);
 }
 
 .bb-form-control:focus {
-  border-color: #ced4da;
-  box-shadow: 0 0 0 0.1rem rgba(0, 105, 92, 0.25);
+  border-color: #CED4DA;
+  box-shadow: 0 0 0 .1rem rgba(0, 105, 92, 0.25);
 }
 
 .hidden {
   display: none;
+}
+
+a {
+  color: #00695C;
+}
+
+a:hover,
+a:focus {
+  color: #00695C;
 }
 
 /*************
@@ -102,7 +111,7 @@
 }
 
 .bb-dropdown.bb-scroll-dropdown .dropdown-item {
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid #E9ECEF;
   padding: .5rem 1rem;
   border-radius: 0;
   margin: 0;
@@ -114,7 +123,7 @@
 }
 
 .bb-dropdown.bb-scroll-dropdown .dropdown-menu>.dropdown-item:last-child {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   text-align: center;
   border-bottom-right-radius: .35rem;
   border-bottom-left-radius: .35rem;
@@ -134,9 +143,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #FFFFFF;
   text-align: center;
-  color: #6c757d;
+  color: #6C757D;
   line-height: 180px;
 }
 
@@ -170,7 +179,7 @@
  ***********/
 
 .bb-wrapper {
-  background-color: #fcfcfc;
+  background-color: #FCFCFC;
   position: fixed;
   left: 100px;
   top: 68px;
@@ -190,12 +199,12 @@
 }
 
 .bb-navbar-brand.navbar-brand {
-  color: #00695c;
+  color: #00695C;
   font-weight: bold;
 }
 
 .bb-navbar-brand.navbar-brand:hover {
-  color: #00695c;
+  color: #00695C;
   font-weight: bold;
 }
 
@@ -250,7 +259,7 @@
 
 .bb-sidebar-link-text {
   display: block;
-  font-size: 0.7rem;
+  font-size: .7rem;
 }
 
 .bb-sidebar-link:hover>a {
@@ -270,7 +279,7 @@
   display: none;
   list-style: none;
   padding: .25rem 0;
-  background-color: #fff;
+  background-color: #FFFFFF;
   background-clip: padding-box;
   border-radius: 0 .35rem .35rem 0;
   border-left: none;
@@ -302,6 +311,23 @@
 
 .bb-sidebar-sublink.active a {
   background-color: rgba(0, 0, 0, 0.05);
-  color: #00695c;
+  color: #00695C;
   font-weight: bold;
+}
+
+/**************
+ * BREADCRUMB *
+ **************/
+
+.bb-breadcrumb {
+  margin-bottom: 1.5rem;
+  background-color: rgba(17, 115, 103, 0.05);
+}
+
+.bb-page-title {
+  color: #00695C;
+  padding-left: .75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
 }
